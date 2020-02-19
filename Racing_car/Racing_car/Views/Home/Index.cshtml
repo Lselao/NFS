@@ -1,0 +1,20 @@
+﻿
+@model Users
+
+<h1> Need For Spitii </h1>
+<h1> Start the Game!!!</h1>
+<br />
+<link href="~/css/background.css" rel="stylesheet">
+
+
+<div class="body">
+    <form asp-action="Game" class="container">
+        <h2>Ready!!!!</h2>
+
+        <label asp-for="Name"><b>Username</b></label>
+        <input asp-for="Name" placeholder="Enter Username" >
+        <span asp-validation-for="Name" class="text-danger"></span>
+
+        <button type="Submit" id="btnSave" value="UserNamebtn" class="btn">Start!</button>
+    </form>
+</div>

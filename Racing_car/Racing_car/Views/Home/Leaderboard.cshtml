@@ -1,0 +1,28 @@
+﻿
+
+@model List<Users>
+
+
+<h1>leaderboard</h1>
+<p>
+    <a asp-action="Game"> Back to Game </a>
+</p>
+<hr />
+
+<table class="table">
+    <tr>
+        <th> Username: </th>
+        <th> Points: </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td> @Html.DisplayFor(Users => item.Name) </td>
+            <td> @Html.DisplayFor(Users => item.Score) </td>
+        </tr>
+
+        
+    }
+</table>
+

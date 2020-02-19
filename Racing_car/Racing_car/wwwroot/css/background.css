@@ -1,0 +1,40 @@
+﻿
+
+h1 {
+    font-style: italic;
+    text-align: center;
+    font-family: 'Comic Sans MS';
+    color: deeppink;
+}
+
+h2 {
+    text-align: left;
+    color: deeppink;
+}
+
+.container {
+    color: deeppink;
+}
+/* Set a style for the submit button */
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+    .btn:hover {
+        opacity: 1;
+    }
+
+body {
+    background-image: url("https://img.youtube.com/vi/hPr9kyfTB8Y/maxresdefault.jpg");
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

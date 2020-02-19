@@ -1,0 +1,47 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<link href="~/css/race.css" rel="stylesheet">
+<div class="text-center">
+
+
+    <div id="help">
+        <p>Controls: Right, Left, Up & Down arrow keys.</p>
+    </div>
+
+</div>
+
+<div id="score_div">
+    Score: <span id="score">0</span>
+    High Score: <span id="high_score">0</span>
+</div>
+<div id="container">
+    <div id="line_1" class="line"></div>
+    <div id="line_2" class="line"></div>
+    <div id="line_3" class="line"></div>
+
+    <div id="car" class="car">
+        <img class="car" src="~/img/racecar.png" />
+    </div>
+    <div id="car_1" class="car">
+        <img class="car" src="~/img/enermy.png" />
+    </div>
+    <div id="car_2" class="car">
+        <img class="car" src="~/img/biker.png" />
+    </div>
+    <div id="car_3" class="car">
+        <img class="car" src="~/img/police_car.png" />
+    </div>
+    <div id="restart_div">
+        <button id="restart">
+            Restart<br>
+            <small class="small_text">(press Enter)</small>
+        </button>
+    </div>
+</div>
+
+
+<script src="~/lib/jquery/dist/jquery.min_R.js"></script>
+<script src="script.js"></script>
+<script src="~/js/game.js"></script>
